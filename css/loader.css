@@ -1,0 +1,173 @@
+body {
+  height: 100vh;
+  background-color: #000000;
+  display: block;
+}
+.allblack {
+  height: 100vh;
+  background-color: #000000;
+  display: inline;
+}
+.fly-in-text {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.fly-in-text li {
+  display: inline-block;
+  margin-right: 50px;
+  font-family: Open Sans, Arial;
+  font-weight: 300;
+  font-size: 5em;
+  color: #fff;
+  opacity: 1;
+  transition: all 2.5s ease;
+}
+.fly-in-text li:last-child {
+  margin-right: 0;
+}
+.fly-in-text.hidden li {
+  opacity: 0;
+}
+.fly-in-text.hidden li:nth-child(1) {
+  transform: translateX(-200px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(2) {
+  transform: translateX(20px) translateY(100px);
+}
+.fly-in-text.hidden li:nth-child(3) {
+  transform: translateX(-150px) translateY(-80px);
+}
+.fly-in-text.hidden li:nth-child(4) {
+  transform: translateX(10px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(5) {
+  transform: translateX(-300px) translateY(200px);
+}
+.fly-in-text.hidden li:nth-child(6) {
+  transform: translateX(20px) translateY(-20px);
+}
+.fly-in-text.hidden li:nth-child(7) {
+  transform: translateX(30px) translateY(200px);
+}
+.progress {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  animation: loaderBlack;
+  animation-duration: 7s;
+}
+.progress-bar {
+  background-color: aqua;
+  animation: loaderBlack;
+  animation-duration: 4s;
+}
+.progress-bar-striped {
+  background-color: #000000;
+  animation: loaderBlack;
+  animation-duration: 1s;
+}
+.active {
+  animation: loaderBlack;
+  animation-duration: 2s;
+}
+@keyframes loaderBlack {
+  0% {
+    background-color: #fff;
+    width: 0%;
+  }
+  5% {
+    background-color: #fff;
+    width: 5%;
+  }
+  10% {
+    background-color: #fff;
+    width: 10%;
+  }
+  15% {
+    background-color: #fff;
+    width: 15;
+  }
+  20% {
+    background-color: #fff;
+    width: 20%;
+  }
+  25% {
+    background-color: #fff;
+    width: 25%;
+  }
+  30% {
+    background-color: #fff;
+    width: 30%;
+  }
+  35% {
+    background-color: #fff;
+    width: 35%;
+  }
+  40% {
+    background-color: #fff;
+    width: 40%;
+  }
+  45% {
+    background-color: #fff;
+    width: 45%;
+  }
+  50% {
+    background-color: #fff;
+    width: 50%;
+  }
+  55% {
+    background-color: #fff;
+    width: 55%;
+  }
+  60% {
+    background-color: #fff;
+    width: 60%;
+  }
+  65% {
+    background-color: #fff;
+    width: 65%;
+  }
+  70% {
+    background-color: #fff;
+    width: 70%;
+  }
+  75% {
+    background-color: #fff;
+    width: 75%;
+  }
+  80% {
+    background-color: #fff;
+    width: 80%;
+  }
+  85% {
+    background-color: #fff;
+    width: 85%;
+  }
+  90% {
+    background-color: #fff;
+    width: 90%;
+  }
+  95% {
+    background-color: #fff;
+    width: 95%;
+  }
+  100% {
+    background-color: #fff;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .welcome-section .content-wrap .fly-in-text li {
+    font-size: 10em;
+  }
+  .welcome-section .content-wrap .enter-button {
+    font-size: 1.5em;
+  }
+}

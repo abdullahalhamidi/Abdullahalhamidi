@@ -1,1 +1,1 @@
-https://abdullahalhamidi.github.io/Abdullahalhamidi/loader.html
+https://abdullahalhamidi.github.io/Abdullahalhamidi/index.html
